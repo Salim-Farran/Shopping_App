@@ -1,6 +1,6 @@
-# Shopping_App
+# flutter_riverpod
 
-A new Flutter app for shopping.
+A new Flutter project.
 
 ## Getting Started
 

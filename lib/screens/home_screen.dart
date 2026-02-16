@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         actions: const [CartCard()],
       ),
       body: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 return  Card(
                   elevation: 6,
-                  surfaceTintColor: Colors.red,
+                  surfaceTintColor: Color(0xFFFDFDFB),
                   child: Text('item'),
                 );
               }

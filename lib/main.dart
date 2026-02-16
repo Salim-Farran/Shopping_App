@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/screens/home_screen.dart';
+import 'package:shopping_app/theme/app_themes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Shopping cart',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      darkTheme:  ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.black),
-      ),
+      themeMode: ThemeMode.system,
+      theme: AppThemes.lightTheme,
+      darkTheme: AppThemes.darkTheme,
       home: const HomeScreen(),
     );
   }
