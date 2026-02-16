@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/extensions/navigation_extension.dart';
 import 'package:shopping_app/screens/cart_screen.dart';
 
 class CartCard extends StatelessWidget {
@@ -10,9 +11,7 @@ class CartCard extends StatelessWidget {
       children: [
         IconButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const CartScreen();
-              }));
+              context.push(ScreenRoutes.cartScreen);
             },
             icon: const Icon(Icons.shopping_bag_outlined)
         ),

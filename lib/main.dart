@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/screens/cart_screen.dart';
 import 'package:shopping_app/screens/home_screen.dart';
 import 'package:shopping_app/theme/app_themes.dart';
+
+import 'extensions/navigation_extension.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +22,9 @@ class MyApp extends StatelessWidget {
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
       home: const HomeScreen(),
+      routes: <String, WidgetBuilder>{
+        ScreenRoutes.cartScreen: (context) => const CartScreen(),
+      },
     );
   }
 }
